@@ -245,7 +245,7 @@ function draw() {
   // fokkerCtx.clearRect(45, 45, 60, 60);
   // fokkerCtx.strokeRect(50, 50, 50, 50);
 
-  fokkerCtx.font = "10px sansserif";
+  fokkerCtx.font = "12px Courier New";
   fokkerCtx.textAlign = "center"
 
   for (var i=0; i<(noteCount * registers); i++)

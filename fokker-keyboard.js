@@ -44,7 +44,7 @@ keyTemplate = (function(ctx)
 
   Key.prototype.draw = function()
   {
-    var octaveOffsetX = octaveWidth * this.octave  -  this.yDisplacement * this.width;
+    var octaveOffsetX = octaveWidth * this.octave  -  widthSpacing * (this.yDisplacement * this.width);
     var octaveOffsetY = -keyHeight * (this.octave + (this.yDisplacement * 2.5));
     var xpos = octaveOffsetX + xBorder + keyXpos[this.note] * this.width * widthSpacing;
     var ypos = octaveOffsetY + yBorder + Math.floor((5 - keyYpos[this.note]) * (this.height * 0.5));  // invert Y
