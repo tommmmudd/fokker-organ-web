@@ -5,4 +5,6 @@ This is a quick test of a web version of the Fokker organ. At the moment, this i
 
 Try it here: [https://tommudd.co.uk/fokker/](https://tommudd.co.uk/fokker/)
 
-![Fokker organ interface](https://github.com/tommmmudd/fokker-organ-web/blob/main/resources/fokker_image.jpg)
+
+[![Alt text](https://someimage.svg)](https://destination)
+[![Fokker organ interface](https://github.com/tommmmudd/fokker-organ-web/blob/main/resources/fokker_image.jpg)](https://tommudd.co.uk/fokker/)
