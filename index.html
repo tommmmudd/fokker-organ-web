@@ -10,7 +10,7 @@
 
 	input {
     	/*margin: .4rem;*/
-  		width: 250px;
+  		width: 350px;
 	}
 
 	.central {
@@ -56,14 +56,15 @@
 			This is a quick test of a web version of the Fokker organ. At the moment, this is not necessarily accurate in terms of tuning or layout, so please don't rely on this for research purposes for the moment!
 		</p>
 		
-		<button id="onOff" class="control-power powerbutton" role="switch" aria-checked="false" data-power="off">
+		<button id="onOff" class="control-power powerbutton" role="switch" aria-checked="false" data-power="off" style="width: 500px; height: 50px;">
 			<span>Turn Audio On</span>
 		</button>
+		<br>
 		<button id="stopAllNotes" class="" role="switch" aria-checked="false" data-power="off">
 			<span>Stop all notes</span>
 		</button>
 
-		<input type="range" width="300px" id="x" class="gain" min="0" max="1" value="0.5" list="gain-vals" step="0.001" data-action="x" />
+		<input type="range" id="x" class="gain" min="0" max="1" value="0.5" list="gain-vals" step="0.001" data-action="x" />
 		<label for="volume">Gain</label><br>
 
 

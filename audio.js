@@ -104,7 +104,7 @@ const startAudio = async (context) => {
   // ELEMENTS
   // const sineOsc = new AudioWorkletNode(context, 'sine-processor');
   // master gain now defined globally so interface can be drawn
-  masterGain.gain.value = 0.5;
+  masterGain.gain.value = 0.25;
 
   // TODO: add compressor
 
@@ -121,7 +121,7 @@ const startAudio = async (context) => {
   masterGain.connect(context.destination);
 
   // Fade in (avoiding hard transient)
-  masterGain.gain.setTargetAtTime(0.5, context.currentTime + 0.1, 1);
+  masterGain.gain.setTargetAtTime(0.25, context.currentTime + 0.1, 1);
   
 
   // =================================
@@ -131,7 +131,7 @@ const startAudio = async (context) => {
 
   // (2) Gain slider 
   const gainSlider = document.querySelector(".gain"); // get the html element (class is "freq")
-  gainSlider.value = masterGain.gain.value;      // set slider to node value
+  gainSlider.value = 0.5;      // set slider to node value
 
   gainSlider.addEventListener('input', function() 
   {
